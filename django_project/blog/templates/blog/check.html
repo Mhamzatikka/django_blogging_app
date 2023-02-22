@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <h1>Blogs Data</h1>
+
+    <ul>
+        {% for x in mymembers %} 
+        <li> <a href="/blog/check_by_id/{{x.id}}">{{ x.title }} || {{x.content}}</a> || </li>
+        {% endfor %}
+    </ul>
+    <p>Back to Members</a></p>
+
+</body>
+</html>
