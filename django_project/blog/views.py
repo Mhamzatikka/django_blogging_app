@@ -38,6 +38,6 @@ def print_data(request):
 def details(request, id):
     data = Post.objects.get(id=id)
     context = {'mymembers': data,}
-    print(context)
+    print("context is", context)
     return render(request, 'blog/check_by_id.html', context)
 
